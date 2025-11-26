@@ -1,36 +1,55 @@
-# Dasmoto's Arts & Crafts
 
-A simple responsive web page for Dasmoto's Arts & Crafts store. This project demonstrates basic HTML and CSS skills, including layout, typography, and image usage.
+# Solidity Q&A Platform (Next.js)
+
+This is a production-ready Next.js app for answering advanced Solidity questions interactively. Users can submit questions about Solidity, smart contracts, gas optimization, security, and more, and view expert answers.
 
 ## Features
-- **Custom CSS Styling:**
-  - Universal box-sizing and resets for consistent layout
-  - Large, bold header with background image
-  - Color-coded category sections (Brushes, Frames, Paints)
-  - Responsive images and product details
-  - Styled price highlights and footer
-- **Organized Structure:**
-  - `index.html` for markup
-  - `style.css` for all styles
-  - `images/` folder for assets
+- Modern, responsive UI (Next.js + Tailwind CSS)
+- Solidity Q&A page with form for submitting questions
+- Example Solidity questions and expert answers
+- Ready for OpenAI API integration for real-time answers
+- Easy deployment to Vercel or Netlify
 
 ## Getting Started
-1. Clone or download this repository.
-2. Open `index.html` in your browser to view the site.
+1. Clone this repository.
+2. Install dependencies:
+	 ```bash
+	 npm install
+	 ```
+3. Run the development server:
+	 ```bash
+	 npm run dev
+	 ```
+4. Visit `/solidity-qa` for the Q&A interface.
+
+## OpenAI API Integration
+- To enable AI-powered answers, add your OpenAI API key to a `.env.local` file:
+	```env
+	OPENAI_API_KEY=your-key-here
+	```
+- Implement the API call in `app/solidity-qa/page.jsx` (see placeholder in code).
+
+## Example Solidity Questions
+- Gas optimization strategies
+- Secure DeFi contract design
+- Common design patterns and anti-patterns
+- Security vulnerabilities and audits
+- Contract upgradeability and proxy patterns
+- Oracles and external data integration
 
 ## File Structure
 ```
-index.html
-style.css
-images/
+app/
+	solidity-qa/
+		page.jsx
+public/
+	images/
+	style.css
+README_OLD.md (legacy info)
 ```
 
-## Screenshot
-![Screenshot](images/pattern.jpg)
-
-## Credits
-- Project for learning HTML & CSS basics.
-- Images are for demonstration purposes only.
+## Deployment
+- Deploy easily to Vercel or Netlify for production.
 
 ---
-Feel free to customize and expand this project!
+Feel free to expand with more Solidity topics and features!

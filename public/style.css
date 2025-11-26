@@ -1,0 +1,113 @@
+/* --- UNIVERSAL AND BASE STYLES --- */
+* {
+    /* Optional: Improves layout consistency by including padding and border in the element's total width/height */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Default font for readability */
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* --- 1. H1 Header Styling --- */
+.main-header {
+    /* Background Image: Assumes 'pattern.jpg' is in a sibling 'images' folder */
+    background-image: url('./images/pattern.jpg'); 
+    background-size: cover; 
+    /* Add padding to the header container for vertical space */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    /* Text Specifications */
+    font-family: Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki; /* Specified color */
+    
+    /* Layout */
+    text-align: center;
+}
+
+/* --- 2. Category H2 Styling (Shared Rules) --- */
+/* Target all H2s inside the main sections */
+#brushes h2, #frames h2, #paints h2 {
+    /* Text Specifications (Shared across all H2s) */
+    font-family: Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    
+    /* Layout (Shared across all H2s) */
+    /* Padding provides height and indents the text from the left */
+    padding: 10px 0 10px 20px; 
+    width: 100%; 
+    display: block; /* Ensure the background spans the full width */
+}
+
+/* --- H2 Background Colors (Specific Rules) --- */
+#brushes h2 {
+    background-color: mediumspringgreen;
+}
+
+#frames h2 {
+    background-color: lightcoral;
+}
+
+#paints h2 {
+    background-color: skyblue;
+}
+
+/* --- 3. Product Details (H3, P, Images) --- */
+img {
+    /* Ensure images don't overflow the screen */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Makes it a block element to take up its own line */
+    /* Add margin below image for spacing */
+    margin-bottom: 10px; 
+}
+
+/* Add left padding/margin to all content elements to align with the H2 text */
+#brushes, #frames, #paints {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h3 {
+    /* Text Specifications */
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    /* Reset left margin from universal reset */
+    margin-bottom: 5px;
+}
+
+p {
+    /* Text Specifications */
+    font-family: Helvetica, sans-serif;
+    color: black;
+    /* Add margin below paragraph for spacing */
+    margin-bottom: 20px;
+}
+
+/* --- 4. Price Styling --- */
+.price {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: blue; /* Specified color */
+    /* The span is an inline element, so no margin/padding is typically needed */
+}
+
+/* --- 5. Footer Styling --- */
+footer {
+    /* Optional: Add space above the footer */
+    margin-top: 30px; 
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #4a4a4a; /* Dark gray for subtle text */
+}
